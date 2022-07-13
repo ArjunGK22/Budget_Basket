@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="75dp" android:padding="5dp"
+    android:background="@drawable/cart_design"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textColor="@color/orange"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/pricetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametv"
+        android:gravity="center_horizontal"
+        android:text="Item Price"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametv"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/itempriceeachtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="10/KG"/>
+
+        <TextView
+            android:id="@+id/itemQuantiytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text="[0]"/>
+
+
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/removeitem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/nametv"
+    android:layout_alignParentEnd="true"
+    android:text="Remove"
+    android:textColor="@color/red"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"/>
+
+
+
+
+
+</RelativeLayout>

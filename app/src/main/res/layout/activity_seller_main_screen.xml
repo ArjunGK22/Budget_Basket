@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerMainScreen"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_rect">
+
+        <ImageButton
+            android:id="@+id/logoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_power_settings_new_24"
+            android:background="@null"
+            android:layout_margin="25dp"/>
+
+        <ImageButton
+            android:id="@+id/editbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="25dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/profile_textbox">
+
+        <TextView
+            android:id="@+id/ownername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/shopnmae"
+            android:layout_below="@+id/ownername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:drawableStart="@drawable/ic_baseline_business_24"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/shopmail"
+            android:layout_below="@+id/shopnmae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Email Id"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/shophone"
+            android:layout_below="@+id/shopmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Phone"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:itemTextColor="@drawable/selector"
+            android:background="@color/colorAccent"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/menu_navigation_vendor"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

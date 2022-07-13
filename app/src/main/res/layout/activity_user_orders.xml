@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserOrders"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_rect">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Orders"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_below="@id/header"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="60dp">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/orderlist"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           tools:listitem="@layout/order_row_details"/>
+
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true">
+
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/bottom_navigation"
+           app:itemTextColor="@drawable/selector"
+           android:background="@color/colorAccent"
+           app:itemIconTint="@drawable/selector"
+           app:menu="@menu/menu_navigation"/>
+
+   </RelativeLayout>
+
+
+</RelativeLayout>

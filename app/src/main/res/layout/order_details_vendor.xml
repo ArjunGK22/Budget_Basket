@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="15dp"
+    app:contentPadding="5dp"
+    app:cardBackgroundColor="@color/liteblack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ordertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Id: "
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/totalamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ordertv"
+            android:text="Total Amount : ₹100"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/orderdatetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ordertv"
+            android:layout_alignParentEnd="true"
+            android:text="18/04/2021"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/orderstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderdatetv"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/totalamt"
+            android:layout_alignParentEnd="true"
+            android:text="In Progress"
+            android:textColor="@color/darkgreen"
+            android:textSize="15dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

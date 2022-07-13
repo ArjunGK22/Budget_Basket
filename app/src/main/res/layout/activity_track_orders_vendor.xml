@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackOrdersVendor"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/header_rect">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Orders "
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/liteblack"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="60dp"
+       android:layout_below="@id/header">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/custorders"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           tools:listitem="@layout/order_details_vendor"
+           android:layout_margin="10dp"/>
+
+   </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemTextColor="@drawable/selector"
+        android:background="@color/colorAccent"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation_vendor"/>
+
+</RelativeLayout>
