@@ -6,5 +6,10 @@
 
 The project was mainly developed to gain the actual working of grocery application
 
+
+#Note
+
+Users forking this project, kindly connect to your firebase and use.
+
 ---------------------------------------------------------------------------------------------
 
